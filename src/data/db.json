@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "React projectManagment",
+      "description": "this project is just for test",
+      "dueDate": "2024-07-05 20:30",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "name": "Angular projectManagment",
+      "description": "this is angular project",
+      "dueDate": "2024-03-05 20:30",
+      "completed": true
+    }
+  ]
+}

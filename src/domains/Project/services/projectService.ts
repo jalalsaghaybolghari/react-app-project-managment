@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { Project } from '../types';
 
-const API_BASE_URL = 'https://api.example.com/projects';
+const API_BASE_URL = `${process.env.REACT_APP_API_URL}/projects`;
 
 export const fetchProjects = async (): Promise<Project[]> => {
   const response = await axios.get<Project[]>(`${API_BASE_URL}`);

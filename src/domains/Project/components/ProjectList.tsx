@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { RootState } from '../../../app/store';
 import ProjectItem from './ProjectItem';
 import { fetchProjects } from '../projectSlice';
+import { useAppDispatch } from '../../../hooks/hooks';
 
 const ProjectList: React.FC = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const { projects, loading, error } = useSelector((state: RootState) => state.project);
 
   useEffect(() => {
