@@ -1,11 +1,10 @@
 import React from 'react';
-import ProjectList from './domains/Project/components/ProjectList';
+import AppRouter from './AppRouter';
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Project Management</h1>
-      <ProjectList />
+      <AppRouter />
     </div>
   );
 };
